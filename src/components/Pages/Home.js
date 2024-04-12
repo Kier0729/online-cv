@@ -28,7 +28,7 @@ function Home(){
             }
             <h1 className="reddit-mono-h1">Kier Anthony Dalit</h1>
             <h3 className="reddit-mono-h1">Full Stack Web Developer</h3>
-            <p className="reddit-mono-h1">As a career shifter, In order to pursue my 
+            <p className="reddit-mono-h1">In order to pursue my 
             passion and strengthen my skills, knowledge, and experience in the web 
             development field. I decided to conduct some self study and attended 
             online courses to acquire the knowledge and skills needed to start my 

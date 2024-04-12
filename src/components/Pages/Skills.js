@@ -6,9 +6,28 @@ function Skills(){
 
     return(
         <div className="container-outer">
-            <div className="container-inner">
-            <button className="reddit-mono-h1 btn" onClick={()=>myContext.handleClick()}>Close</button>
-                Skills
+            <div className="container-inner-skills">
+                <button className="reddit-mono-h1 btn" onClick={()=>myContext.handleClick()}>Close</button>
+                
+                <div className="reddit-mono-h1">
+                    <label >Relevant Skills</label>
+                    <li >HTML, CSS</li>
+                    <li >Bootstrap</li>
+                    <li >Javascript</li>
+                    <li >jQuery</li>
+                    <li >API</li>
+                    <li >React</li>
+                    <li >Node.js</li>
+                    <li >EJS</li>
+                    <li >Git</li>
+                    <li >SQL</li>
+                    <li >PostgreSQL</li>
+                    <li >Authentication and Security</li>
+                    <li >Problem-solving</li>
+                    <li >Creative thinking</li>
+                    <li >Front-End Web Development</li>
+                    <li >App Development</li>    
+                </div>
             </div>
         </div>
     );

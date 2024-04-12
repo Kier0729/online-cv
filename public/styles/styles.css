@@ -1,3 +1,12 @@
+/* body{
+  height: 100vh;
+  background: white;
+  transition: 5s;
+  animation: bg-animation 2s linear infinite alternate;
+}  */
+/* @keyframes bg-animation {
+  to{ background: #b4b2b2}
+} */
 .reddit-mono-h1{
   font-family: "Reddit Mono", monospace;
   font-optical-sizing: auto;
@@ -23,7 +32,7 @@ footer{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   height: 2rem;
-  width: 50%;
+  width: 75%;
   align-self:center;
 }
 
@@ -42,8 +51,10 @@ h1{
   margin-bottom: .5rem;
 }
 .container-btn h4:hover{
-  color: darkblue;
-  font-size: larger;
+  transition: .3s;
+    color: darkblue;
+    font-size: larger;
+  
 }
 
 .container-btn button{
@@ -59,7 +70,23 @@ h1{
   position: absolute;
   width: 99%;
   height: 100%;
-  background-color: rgb(0, 0, 0, 0.2)
+  background: linear-gradient(to top right, rgb(0, 0, 0, .9),rgba(137, 137, 137, 0.7),rgba(225, 223, 223, 0.7));
+  background-size: 500%;
+  animation: bg-animation 2s linear infinite alternate;
+}
+/* body{
+  height: 100vh;
+  background: white;
+  transition: 5s;
+  animation: bg-animation 2s linear infinite alternate;
+}  */
+@keyframes bg-animation {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
 }
 .container-inner{
   position: relative;
@@ -68,20 +95,51 @@ h1{
   height: 80%;
 }
 
+.container-inner-skills{
+  position: relative;
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.container-inner-skills div{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.container-inner-skills li{
+  list-style: none;
+  font-size: larger;
+}
+.container-inner-skills label{
+  font-size: x-large;
+  font-weight: 900;
+}
+
 .container-inner-about{
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 1fr;
   position: relative;
   background-color: white;
-  width: 80%;
-  height: 80%;
+  width: 85%;
+  height: 85%;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .contact-education{
   background-color: rgb(212, 210, 205);
   grid-area: 1 / 1 / 3 / 2;
-  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.contact-education h1{
+  margin-top: 0;
 }
 .container-inner-about>div>div{
   display: flex;
@@ -98,7 +156,8 @@ h1{
 
 .career-objective{
   grid-area: 1 / 2 / 3 / 3;
-  margin: 1rem;
+  overflow: auto;
+  padding: 1rem;
 }
 .career-objective p{
   margin-top: 0;
@@ -109,6 +168,7 @@ h1{
   text-align: left;
 }
 .career-objective h2{
+  margin-top: .25rem;
   margin-bottom: .25rem;
 }
 
@@ -123,6 +183,89 @@ h1{
 
 .btn{
   position: absolute;
-  right: 16px;
-  top: 16px;
+  right: 15px;
+  top: 15px;
+}
+
+.container-inner-projects{
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);
+  position: relative;
+  background-color: white;
+  width: 95%;
+  height: 80%;
+  border-radius: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow: auto;
+  gap: .5rem;
+}
+
+.container-inner-projects div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: auto;
+}
+
+.container-inner-projects label{
+  font-size: large;
+  font-weight: 900;
+  height: 2rem;
+}
+
+.container-inner-projects label:hover{
+  transition: .3s;
+  font-size: x-large;
+  color: blue;
+}
+.container-inner-projects img{
+  width: 90%;
+  height: 25%;
+}
+
+.container-inner-projects p{
+  text-align: left;
+  white-space: normal;
+  width: 90%;
+  word-wrap: break-word;
+  font-optical-sizing: none;
+  /* word-wrap: break-word; */
+}
+
+.container-inner-projects span{
+  color: blue;
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .container-inner-about, .container-inner-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 400px;
+  }
+  .container-inner-skills, body{
+    min-width: 400px;
+  }
+  .container-inner-projects img{
+    width: 60%;
+    height: 40%;
+  }
+  .container-inner-projects{
+    overflow: auto;
+  }
+  .container-inner-projects div{
+    overflow: unset;
+  }
+  .container-inner-projects div>p{
+    text-align: center;
+  }
+  .container-btn{
+    width: 100%;
+    height: 3rem;
+  }
 }
