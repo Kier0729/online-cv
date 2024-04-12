@@ -25,8 +25,7 @@ function Skills(){
                     <li >Authentication and Security</li>
                     <li >Problem-solving</li>
                     <li >Creative thinking</li>
-                    <li >Front-End Web Development</li>
-                    <li >App Development</li>    
+                    <li >Web App Development</li>   
                 </div>
             </div>
         </div>
