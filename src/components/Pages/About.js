@@ -26,7 +26,7 @@ function About(){
                     <p className="reddit-mono-h1">Looking forward to apply my development skills and technical knowledge in a 
                         challenging role as a Full Stack Developer. As well as acquiring new 
                         skill and knowledge in the field of web development.</p>
-                    <h2 className="reddit-mono-h1">Experience</h2>
+                    <h2 className="reddit-mono-h1">Relevant Experience</h2>
                     <div>
                         <li className="reddit-mono-h1">Created a web app called <span className="web-name">Public API</span> using (html, css, bootstrap, EJS and Node.js). 
                         It was made for submitting a straightforward API request to a public API and display the response data from the API.</li>
