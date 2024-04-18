@@ -28,11 +28,11 @@ function About(){
                         skill and knowledge in the field of web development.</p>
                     <h2 className="reddit-mono-h1">Relevant Experience</h2>
                     <div>
-                        <li className="reddit-mono-h1">Created a web app called <span className="web-name">Public API</span> using (html, css, bootstrap, EJS and Node.js). 
+                        <li className="reddit-mono-h1">Created a web app called <span className="web-name">Public API</span> using (HTML, CSS, Bootstrap, EJS and Node.js). 
                         It was made for submitting a straightforward API request to a public API and display the response data from the API.</li>
-                        <li className="reddit-mono-h1">Using (html,css,EJS, Node.js and PostgreSQL). I developed a web app <span className="web-name">Book Notes</span>.  
+                        <li className="reddit-mono-h1">Using (HTML, CSS, EJS, Node.js and PostgreSQL). I developed a web app <span className="web-name">Book Notes</span>.  
                          For sending an API request to a public API and saving book cover reviews in a database.</li>
-                        <li className="reddit-mono-h1">Developed a web app <span className="web-name">Tracker App</span>. A web application designed for tracking credit card expenses.</li>
+                        <li className="reddit-mono-h1">Developed <span className="web-name">Tracker App</span>. A web application designed for tracking credit card expenses.</li>
                     </div>
                 </div>
                 <button className="reddit-mono-h1 btn" onClick={()=>myContext.handleClick()}>Close</button>

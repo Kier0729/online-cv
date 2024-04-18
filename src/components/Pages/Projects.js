@@ -18,7 +18,7 @@ function Projects(){
                     <label className="reddit-mono-h1" onClick={()=>window.open("https://project-tracker-8zss.onrender.com/")}>Tracker App</label>
                     <img src={process.env.PUBLIC_URL + "/assets/images/Tracker-App-Login.jpg"} alt="Login Page" />
                     <p className="reddit-mono-h1">
-                        Web App developed using (React, Node and PostgreSQL). I 
+                        A Web Application developed using (HTML, CSS, React, Node.js and PostgreSQL). I 
                         created this app with the purpose of tracking credit card 
                         expenses. It has a user login to separate data from different 
                         users and an admin login, for the purpose of account management 
