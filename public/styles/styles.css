@@ -8,9 +8,6 @@
   to{ background: #b4b2b2}
 } */
 
-body{
-  height: 50vh;
-}
 .reddit-mono-h1{
   font-family: "Reddit Mono", monospace;
   font-optical-sizing: auto;
@@ -23,7 +20,7 @@ body{
   flex-direction: column;
   justify-content: center;
   height: calc(100vh - 30px);
-  max-height: 700px;
+  /* max-height: 700px; */
 }
 
 .container-btn{
@@ -71,7 +68,7 @@ h1{
   background: linear-gradient(to top right, rgb(0, 0, 0, .9),rgba(137, 137, 137, 0.7),rgba(225, 223, 223, 0.7));
   background-size: 500%;
   animation: bg-animation 2s linear infinite alternate;
-  max-height: 700px;
+  /* max-height: 700px; */
 }
 /* body{
   height: 100vh;
@@ -126,10 +123,10 @@ h1{
   position: relative;
   background-color: white;
   width: 85%;
-  height: 85%;
+  height: 75%;
+  max-height: 700px;
   padding: 1rem;
   border-radius: 1rem;
-  max-height: 700px;
 }
 
 .contact-education{
@@ -242,13 +239,23 @@ h1{
   text-decoration: underline;
 }
 
+footer{
+  position: fixed;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
 @media (max-width: 800px) {
   .container-inner-about, .container-inner-projects{
     display: flex;
     flex-direction: column;
     gap: 1rem;
     min-width: 400px;
+    max-height: 700px;
+    /* background: red; */
   }
+
   .container-inner-skills, body{
     min-width: 400px;
   }
@@ -269,17 +276,21 @@ h1{
     width: 100%;
     height: 3rem;
   }
+  footer{
+    min-width: 80%;
+    bottom: 3px;
+  }
 }
 
-footer{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
+/* @media (min-width: 801px) {
+  .container-inner-about, .container-inner-projects{
+    background: rgb(47, 0, 255);
+    height: 75%;
+  }  
+} */
 
-@media (min-height: 700px) {
+/* @media (min-height: 700px) {
   footer{
     bottom:unset ;
   }
-}
+} */
