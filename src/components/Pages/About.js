@@ -3,7 +3,6 @@ import Context from "../Context";
 
 function About(){
     const myContext = useContext(Context);
-
     return(
         <div className="container-outer">
             <div className="container-inner-about">
@@ -19,7 +18,9 @@ function About(){
                     </div>
                     <h1 className="reddit-mono-h1">Education</h1>
                     <h4 className="reddit-mono-h1">AMA Computer College (2010)</h4>
-                    <h5 className="reddit-mono-h1">{`Bachelor of Science in Information Technology \n GWA(1.74/5.00)`}</h5>
+                    <h5 className="reddit-mono-h1">Bachelor of Science in <br></br>Information Technology <br></br>GWA(1.74/5.00)</h5>
+                    <h1 className="reddit-mono-h1">Training/Seminar</h1>
+                    <h4 className="reddit-mono-h1">“The Complete 2024 <br></br>Web Development Bootcamp”<br></br>Udemy(March 2024) <span className="link" onClick={()=>{myContext.setClose(true)}}>View</span></h4>
                 </div>
                 <div className="career-objective">
                     <h2 className="reddit-mono-h1">Career Objective</h2>

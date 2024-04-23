@@ -4,12 +4,14 @@ import About from "./About";
 import Context from "../Context";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Certificate from "./Certificate";
 
 function Home(){
     // const navigate = useNavigate();
     const [about, setAbout] = useState(false);
     const [skills, setSkills] = useState(false);
     const [projects, setProjects] = useState(false);
+    const [close, setClose] = useState(false)
     
     function handleClick(){
         setAbout(false)
@@ -20,12 +22,14 @@ function Home(){
     return(
         <div className="container">
             {
-                <Context.Provider value={{handleClick:handleClick}}>
+                <Context.Provider value={{handleClick:handleClick, close:close, setClose:setClose}}>
                     {about && <About />}
                     {skills && <Skills />}
                     {projects && <Projects />}
+                    {close && <Certificate />}
                 </Context.Provider>
             }
+            {console.log(close)}
             <h1 className="reddit-mono-h1">Kier Anthony Dalit</h1>
             <h3 className="reddit-mono-h1">Full Stack Web Developer</h3>
             <p className="reddit-mono-h1">In order to pursue my 
