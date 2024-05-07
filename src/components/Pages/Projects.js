@@ -1,6 +1,6 @@
 import React, {useContext} from "react"
 import Context from "../Context";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 // https://project-tracker-8zss.onrender.com/
 // https://project-book-notes.onrender.com
 // https://public-api-project.onrender.com
@@ -8,7 +8,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 function Projects(){
     const myContext = useContext(Context);
-    const navigate = useNavigate();
 
     return(
         <div className="container-outer">

@@ -4,6 +4,7 @@ import About from "./About";
 import Context from "../Context";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Sidebar from "./Sidebar";
 import Certificate from "./Certificate";
 
 function Home(){
@@ -12,26 +13,31 @@ function Home(){
     const [skills, setSkills] = useState(false);
     const [projects, setProjects] = useState(false);
     const [close, setClose] = useState(false)
+    const [sidebar, setSidebar] = useState(false)
     
     function handleClick(){
         setAbout(false)
         setSkills(false)
         setProjects(false)
     }
+    function sidebarClose(){
+        setSidebar(false)
+    }
 
     return(
         <div className="container">
-            {/* <div className="sideBar">
+            <div className="sideBar" onClick={()=>setSidebar(true)}>
             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
             </svg>
-            </div> */}
+            </div>
             {
-                <Context.Provider value={{handleClick:handleClick, close:close, setClose:setClose}}>
+                <Context.Provider value={{handleClick:handleClick, setAbout:setAbout, setSkills:setSkills, setProjects:setProjects, sidebarClose:sidebarClose, close:close, setClose:setClose}}>
                     {about && <About />}
                     {skills && <Skills />}
                     {projects && <Projects />}
                     {close && <Certificate />}
+                    {sidebar && <Sidebar />}
                 </Context.Provider>
             }
             {console.log(close)}
