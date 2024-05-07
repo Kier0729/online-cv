@@ -71,12 +71,12 @@ h1{
   animation: bg-animation 2s linear infinite alternate;
   /* max-height: 700px; */
 }
-/* body{
+body{
   height: 100vh;
-  background: white;
-  transition: 5s;
+  background: linear-gradient(to top right, rgb(0, 0, 0, .9),rgba(137, 137, 137, 0.7),rgba(225, 223, 223, 0.7));
+  background-size: 500%;
   animation: bg-animation 2s linear infinite alternate;
-}  */
+} 
 @keyframes bg-animation {
   0%{
     background-position: left;
