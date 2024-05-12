@@ -41,8 +41,8 @@ function Home(){
                     {sidebar && <Sidebar />}
                 </Context.Provider>
             }
-            <h1 className="reddit-mono-h1" data-mdb-animation-init data-mdb-animation-reset="true" data-mdb-animation="slide-out-right" >Kier Anthony Dalit</h1>
-            <h3 className="reddit-mono-h1">Full Stack Web Developer</h3>
+            <h1 className="reddit-mono-h1">Kier Anthony Dalit</h1>
+            <h3 className="reddit-mono-h1 typewriter">Full Stack Web Developer</h3>
             <p className="reddit-mono-h1">In order to pursue my 
             passion and strengthen my skills, knowledge, and experience in the web 
             development field. I decided to conduct some self study and attended 
