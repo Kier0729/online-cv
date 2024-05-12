@@ -9,6 +9,7 @@ import Certificate from "./Certificate";
 
 function Home(){
     // const navigate = useNavigate();
+    const date = new Date();
     const [about, setAbout] = useState(false);
     const [skills, setSkills] = useState(false);
     const [projects, setProjects] = useState(false);
@@ -40,8 +41,7 @@ function Home(){
                     {sidebar && <Sidebar />}
                 </Context.Provider>
             }
-            {console.log(close)}
-            <h1 className="reddit-mono-h1">Kier Anthony Dalit</h1>
+            <h1 className="reddit-mono-h1" data-mdb-animation-init data-mdb-animation-reset="true" data-mdb-animation="slide-out-right" >Kier Anthony Dalit</h1>
             <h3 className="reddit-mono-h1">Full Stack Web Developer</h3>
             <p className="reddit-mono-h1">In order to pursue my 
             passion and strengthen my skills, knowledge, and experience in the web 
@@ -49,10 +49,11 @@ function Home(){
             online courses to acquire the knowledge and skills needed to start my 
             career as a Full Stack Web Developer. </p>
             <div className="container-btn">
-                <button onClick={()=>setAbout(true)}><h4 className="reddit-mono-h1">About</h4></button>
-                <button onClick={()=>setSkills(true)}><h4 type="button" className="reddit-mono-h1">Relevant Skills</h4></button>
-                <button onClick={()=>setProjects(true)}><h4 type="button" className="reddit-mono-h1">Projects</h4></button>
+                <button onClick={()=>setAbout(true)}><h5 className="reddit-mono-h1 col-4">About</h5></button>
+                <button onClick={()=>setSkills(true)}><h5 type="button" className="reddit-mono-h1 col-4">Relevant Skills</h5></button>
+                <button onClick={()=>setProjects(true)}><h5 type="button" className="reddit-mono-h1 col-4">Projects</h5></button>
             </div>
+            <footer className="prevent-select reddit-mono-h1">{`©${date.getFullYear()} Kier Dalit. All rights reserved.`}</footer>
         </div>
     );
 }

@@ -15,11 +15,19 @@
   text-align: center;
 }
 
+h1{
+  font-weight: bolder;
+}
+
 .container{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh - 30px);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  max-width: none;
+  padding: 0;
   /* max-height: 700px; */
 }
 
@@ -31,6 +39,9 @@
   align-self:center;
   gap: 5px;
 }
+.container-btn h5{
+  width: 100%;
+}
 
 h3,h4,h5{
   margin-top: 0;
@@ -38,18 +49,20 @@ h3,h4,h5{
 }
 
 p{
-  font-weight: 500;
+  /* font-weight: 500; */
   margin-bottom: 0;
+  padding-left: .25rem;
+  padding-right: .25rem;
 }
 
-h1{
-  font-weight: 900;
-  margin-bottom: .5rem;
+h3{
+  /* font-weight: 900; */
+  font-weight: bolder;
 }
-.container-btn h4:hover{
+.container-btn h5:hover{
   transition: .3s;
     color: darkblue;
-    font-size: larger;
+    /* font-size: larger; */
     cursor: pointer;
     /* background-color: rgb(169, 169, 169, 0.2); */ 
 }
@@ -64,6 +77,8 @@ h1{
   border: 2px solid black;
   background-color: rgb(0, 0, 0, 0);
   border-radius: 5px;
+  height: max-content;
+  text-align: center;
 }
 
 .container-outer{
@@ -72,7 +87,7 @@ h1{
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 99%;
+  width: 100%;
   height: 100%;
   background: linear-gradient(to top right, rgb(0, 0, 0, .9),rgba(137, 137, 137, 0.7),rgba(225, 223, 223, 0.7));
   background-size: 500%;
@@ -80,7 +95,7 @@ h1{
   /* max-height: 700px; */
 }
 body{
-  height: 97vh;
+  height: 100%;
   background: linear-gradient(to top right, rgb(0, 0, 0, .9),rgba(137, 137, 137, 0.7),rgba(225, 223, 223, 0.7));
   background-size: 500%;
   animation: bg-animation 2s linear infinite alternate;
@@ -122,6 +137,7 @@ body{
   height: fit-content;
   padding: 1rem;
   border-radius: 1rem;
+  z-index: 999;
 }
 
 .container-inner-skills div{
@@ -151,6 +167,7 @@ body{
   max-height: 700px;
   padding: 1rem;
   border-radius: 1rem;
+  z-index: 999;
 }
 
 .contact-education{
@@ -159,15 +176,12 @@ body{
   padding: 1rem;
   border-radius: 1rem;
 }
-.contact-education h1{
-  margin-top: 0;
-}
 .container-inner-about>div>div{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: .25rem;
 }
 .container-inner-about label{
   display: flex;
@@ -203,10 +217,17 @@ body{
 }
 
 .btn{
+  border: 2px solid black;
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 5px;
+  top: 5px;
   cursor: pointer;
+  padding: 2px;
+  background: rgb(201, 201, 201);
+}
+.btn:hover{
+  background: rgba(88, 88, 88, 0.9);
+  border: 2px solid black;
 }
 
 .link{
@@ -229,6 +250,7 @@ body{
   overflow: auto;
   gap: .5rem;
   max-height: 700px;
+  z-index: 999;
 }
 
 .container-inner-projects div{
@@ -248,7 +270,7 @@ body{
 
 .container-inner-projects label:hover{
   transition: .3s;
-  font-size: x-large;
+  /* font-size: x-large; */
   color: blue;
 }
 .container-inner-projects img{
@@ -272,8 +294,9 @@ body{
 
 footer{
   position: fixed;
-  bottom: 8px;
+  bottom: 0px;
   width: 100%;
+  min-width: 400px;
   text-align: center;
 }
 
@@ -285,6 +308,11 @@ footer{
     min-width: 400px;
     max-height: 700px;
     /* background: red; */
+  }
+
+  .contact-education, .career-objective{
+    height: 50%;
+    overflow: auto;
   }
 
   .container-inner-skills, body{
@@ -332,7 +360,12 @@ svg:hover{
   animation: sidebar-animation .5s forwards;
 }
 @keyframes sidebar-animation {
-to{ width: 15%}
+to{ 
+  position: fixed;
+  right: 0;
+  width: 15%;
+  height: 100%;
+}
 }
 
 .sidebar-btn{
