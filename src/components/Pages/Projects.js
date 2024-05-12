@@ -15,36 +15,36 @@ function Projects(){
             <button className="reddit-mono-h1 btn" onClick={()=>myContext.handleClick()}>Close</button>
                 <div>
                     <label className="reddit-mono-h1" onClick={()=>window.open("https://project-tracker-8zss.onrender.com/")}>Tracker App</label>
-                    <img src={process.env.PUBLIC_URL + "/assets/images/Tracker-App-Login.jpg"} alt="Login Page" />
+                    <img src={process.env.PUBLIC_URL + "/assets/images/Tracker-App-Login.jpg"} alt="Login Page" onClick={()=>window.open("https://project-tracker-8zss.onrender.com/")}/>
                     <p className="reddit-mono-h1">
                         A Web Application developed using (HTML, CSS, React, Node.js and PostgreSQL). I 
                         created this app with the purpose of tracking credit card 
                         expenses. It has a user login to separate data from different 
                         users and an admin login, for the purpose of account management 
                         (password reset, account deletion etc.). 
-                        Click the project Title or this <Link target="_blank" to={"https://project-tracker-8zss.onrender.com/"}><span>link</span></Link> to redirect/check the 
+                        Click the project Title/Image or this <Link target="_blank" to={"https://project-tracker-8zss.onrender.com/"}><span>link</span></Link> to redirect/check the 
                         actual project.
                     </p>
                     </div>
                 <div>
                     <label className="reddit-mono-h1" onClick={()=>window.open("https://project-book-notes.onrender.com")}>Book Notes</label>
-                    <img src={process.env.PUBLIC_URL + "/assets/images/Book-Review.jpg"} alt="Book Review page" />
+                    <img src={process.env.PUBLIC_URL + "/assets/images/Book-Review.jpg"} alt="Book Review page" onClick={()=>window.open("https://project-book-notes.onrender.com")}/>
                     <p className="reddit-mono-h1">
                         Designed to access a public API (https://openlibrary.org/search.json) in searching 
                         for a book titles. Then use the response to search for a book cover and use it in the 
                         book review. User can save edit and delete reviews of the selected book cover. 
-                        Click the project Title or this <Link target="_blank" to={"https://project-book-notes.onrender.com"}><span>link</span></Link> to redirect/check the 
+                        Click the project Title/Image or this <Link target="_blank" to={"https://project-book-notes.onrender.com"}><span>link</span></Link> to redirect/check the 
                         actual project.
                     </p>
                     </div>
                 <div>
                     <label className="reddit-mono-h1" onClick={()=>window.open("https://public-api-project.onrender.com")}>Public API</label>
-                    <img src={process.env.PUBLIC_URL + "/assets/images/Public-API.jpg"} alt="Public API Page" />
+                    <img src={process.env.PUBLIC_URL + "/assets/images/Public-API.jpg"} alt="Public API Page" onClick={()=>window.open("https://public-api-project.onrender.com")}/>
                     <p className="reddit-mono-h1">
                         A simple website for demonstration of request to a Public API (https://api.opendota.com/api) asking for a list of Dota 2 PRO 
                         players for the Home page and user can also search for a Dota 2 players,
                         base on their In-game Name(IGN). 
-                        Click the project Title or this <Link target="_blank" to={"https://public-api-project.onrender.com"}><span>link</span></Link> to redirect/check the 
+                        Click the project Title/Image or this <Link target="_blank" to={"https://public-api-project.onrender.com"}><span>link</span></Link> to redirect/check the 
                         actual project.
                     </p>
                     </div>
