@@ -314,7 +314,6 @@ footer{
     height: 50%;
     overflow: auto;
   }
-
   .container-inner-skills, body{
     min-width: 400px;
   }
@@ -351,7 +350,7 @@ svg:hover{
   width: 55px;
   height: 55px;
 }
-.container-inner-sidebar{
+/* .container-inner-sidebar{
   position: fixed;
   right: 0;
   width: 0%;
@@ -366,7 +365,42 @@ to{
   width: 15%;
   height: 100%;
 }
+} */
+.container-outer-sidebar{
+  position: fixed;
+  width: 0%;
+  height: 100%;
 }
+.container-inner-sidebar{
+  position: fixed;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgb(169,169,169,0.99);
+}
+.container-outer-sidebar:focus > .container-inner-sidebar{
+  animation: sidebar-animation2 .5s forwards;
+}
+.focused{
+  animation: sidebar-animation .5s forwards;
+}
+.focused-outer{
+  width: 100%;
+}
+
+@keyframes sidebar-animation {
+  to{ 
+    width: 15%;
+  }
+  }
+@keyframes sidebar-animation2 {
+  from{
+    width: 15%;
+  }
+  to{
+    width: 0%;
+  }
+ }
 
 .sidebar-btn{
   width: 100%;
@@ -387,12 +421,6 @@ to{
 .sidebar-btn button:hover{
   transition: .3s;
   color: blue;
-}
-
-.container-outer-sidebar{
-  position: fixed;
-  width: 100%;
-  height: 100%;
 }
 
 .typewriter{

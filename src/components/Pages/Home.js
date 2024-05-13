@@ -33,12 +33,13 @@ function Home(){
             </svg>
             </div>
             {
-                <Context.Provider value={{handleClick:handleClick, setAbout:setAbout, setSkills:setSkills, setProjects:setProjects, sidebarClose:sidebarClose, close:close, setClose:setClose}}>
+                <Context.Provider value={{handleClick:handleClick, setAbout:setAbout, setSkills:setSkills, setProjects:setProjects, sidebar:sidebar, sidebarClose:sidebarClose, close:close, setClose:setClose}}>
                     {about && <About />}
                     {skills && <Skills />}
                     {projects && <Projects />}
                     {close && <Certificate />}
-                    {sidebar && <Sidebar />}
+                    {/* {sidebar && <Sidebar />} */}
+                    <Sidebar />
                 </Context.Provider>
             }
             <h1 className="reddit-mono-h1">Kier Anthony Dalit</h1>
