@@ -20,7 +20,7 @@ function Skills(){
                     <li >Node.js</li>
                     <li >EJS</li>
                     <li >Git</li>
-                    <li >SQL</li>
+                    <li >MySQL</li>
                     <li >PostgreSQL</li>
                     <li >Authentication and Security</li>
                     <li >Problem-solving</li>
