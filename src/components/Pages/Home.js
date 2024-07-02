@@ -46,7 +46,7 @@ function Home(){
             <h3 className="reddit-mono-h1 typewriter">Full Stack Developer</h3>
             <p className="reddit-mono-h1">In order to pursue my 
             passion and strengthen my skills, knowledge, and experience in programming
-            field and in web/application development. I decided to conduct some self study and attended 
+            field as well as in software development. I decided to conduct some self study and attended 
             online courses to acquire the knowledge and skills needed to start my 
             career as a Full Stack Developer. </p>
             <div className="container-btn">
