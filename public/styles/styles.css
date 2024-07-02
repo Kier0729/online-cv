@@ -293,6 +293,10 @@ body{
   /* word-wrap: break-word; */
 }
 
+.largerFont{
+  font-size: larger;
+}
+
 .container-inner-projects span{
   color: blue;
   text-decoration: underline;

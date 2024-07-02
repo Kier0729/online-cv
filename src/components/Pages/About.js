@@ -27,16 +27,16 @@ function About(){
                 </div>
                 <div className="career-objective">
                     <h3 className="reddit-mono-h1">Career Objective</h3>
-                    <p className="reddit-mono-h1">Looking forward to apply my programming and technical skills/knowledge in a 
+                    <p className="reddit-mono-h1 largerFont">Looking forward to apply my programming and technical skills/knowledge in a 
                         challenging role as a Full Stack Developer. In addition to obtaining new 
                         skill and knowledge in the field of programming along with web and application development.</p>
                     <h3 className="reddit-mono-h1">Capstone Projects</h3>
                     <div>
-                        <li className="reddit-mono-h1">Created a web app called <span className="web-name">Public API</span> using (HTML, CSS, Bootstrap, EJS and Node.js). 
+                        <li className="reddit-mono-h1 largerFont">Created a web app called <span className="web-name">Public API</span> using (HTML, CSS, Bootstrap, EJS and Node.js). 
                         It was made for submitting a straightforward API request to a public API and display the response data from the API.</li>
-                        <li className="reddit-mono-h1">Using (HTML, CSS, EJS, Node.js and PostgreSQL). I developed a web app <span className="web-name">Book Notes</span>.  
+                        <li className="reddit-mono-h1 largerFont">Using (HTML, CSS, EJS, Node.js and PostgreSQL). I developed a web app <span className="web-name">Book Notes</span>.  
                          For sending an API request to a public API and saving book cover reviews in a database.</li>
-                        <li className="reddit-mono-h1">Developed <span className="web-name">Tracker App</span>. A web application designed for tracking credit card expenses.</li>
+                        <li className="reddit-mono-h1 largerFont">Developed <span className="web-name">Tracker App</span>. A web application designed for tracking credit card expenses.</li>
                     </div>
                 </div>
                 <button className="reddit-mono-h1 btn" onClick={()=>myContext.handleClick()}>Close</button>
